@@ -23,7 +23,40 @@ body {
     margin: 0 auto;
 }
 
+/* Comment-section */
 
+div.add-comment-container {
+    margin:auto 17px auto 17px;
+    padding: 14px;
+    background-color: #eee;
+}
+
+.comment {
+    border: 1px solid #ddd;
+}
+
+img.avatar-image {
+    width: 44px;
+    height: 44px;
+}
+
+input.send {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5358b6;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.comment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
 @media screen and (min-width: 600px) {
     .container {
