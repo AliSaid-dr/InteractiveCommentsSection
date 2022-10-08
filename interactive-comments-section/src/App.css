@@ -24,7 +24,13 @@ body {
     max-width: 375px;
     margin: 0 auto;
 }
+.clear {
+    content: "";
+  clear: both;
+  display: block;
+}
 
+<<<<<<< HEAD
 /* W: 343 H: 255*/
 /* Comments */
 .comment {
@@ -129,12 +135,55 @@ body {
 
 .actions img[alt^="Reply"] + span {
     color: var(--moderate-blue);
+=======
+/* Comment-section */
+
+div.add-comment-container {
+    margin:auto 17px auto 17px;
+    padding: 14px;
+    background-color: var(--white);
+}
+
+.comment {
+    border: 1px solid #ddd;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+img.avatar-image {
+    width: 44px;
+    height: 44px;
+}
+
+input.send {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5358b6;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    float: right;
+}
+
+.comment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+>>>>>>> ef4cc0912ba66dda1f7041d9c77158f4104e5df4
 }
 
 @media screen and (min-width: 600px) {
     .container {
         max-width: 730px;
     }
+<<<<<<< HEAD
 
     .comment {
         grid-template-areas: 
@@ -148,4 +197,28 @@ body {
         flex-direction: column;
         margin-right: 20px;
     }
+=======
+    form.comment-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .comment {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin: auto 20px auto 20px;
+        resize: none;
+    }
+    img {
+        order: 1;
+    }
+    textarea {
+        order: 2;
+    }
+    input {
+        order: 3;
+    }
+
+
+>>>>>>> ef4cc0912ba66dda1f7041d9c77158f4104e5df4
 }
