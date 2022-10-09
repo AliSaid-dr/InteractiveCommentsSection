@@ -20,6 +20,7 @@ body {
 }
 
 .container {
+    padding-top: 32px;
     max-width: 375px;
     margin: 0 auto;
 }
@@ -29,6 +30,112 @@ body {
   display: block;
 }
 
+<<<<<<< HEAD
+/* W: 343 H: 255*/
+/* Comments */
+.comment {
+    background-color: var(--white);
+    border-radius: 6px;
+    display: grid;
+    grid-template-areas: 
+        "title title title title"
+        "content content content content"
+        "content content content content"
+        "votes . . actions";
+    padding: 20px;
+    grid-row-gap: 15px;
+    margin-bottom: 16px;
+}
+
+.title {
+    grid-area: title;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.title img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.title .username {
+    color: var(--dark-blue);
+}
+
+.title .user {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--moderate-blue);
+    color: var(--white);
+}
+
+.title .publication-date {
+    color: var(--grayish-blue);
+}
+
+.content { 
+    grid-area: content;
+    align-self: center;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+.votes {
+    display: flex;
+    grid-area: votes;
+    background-color: var(--light-gray);
+}
+
+.votes li {
+    align-self: center;
+    color: var(--moderate-blue);
+    padding: 12px;
+    cursor: pointer;
+}
+
+.votes {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.actions {
+    grid-area: actions;
+    font-weight: 500;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+}
+
+.actions img {
+    vertical-align: middle;
+}
+
+.actions span {
+    margin: 0 16px 0 10px;
+}
+
+.actions span:last-child {
+    margin: 0 0 0 10px;
+}
+
+.actions span:hover {
+    color: var(--light-grayish-blue);
+}
+
+
+.actions img[alt^="Delete"] + span {
+    color: var(--soft-red);
+}
+
+.actions img[alt^="Reply"] + span {
+    color: var(--moderate-blue);
+=======
 /* Comment-section */
 
 div.add-comment-container {
@@ -69,12 +176,28 @@ input.send {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+>>>>>>> ef4cc0912ba66dda1f7041d9c77158f4104e5df4
 }
 
 @media screen and (min-width: 600px) {
     .container {
         max-width: 730px;
     }
+<<<<<<< HEAD
+
+    .comment {
+        grid-template-areas: 
+        "votes title . actions"
+        "votes content content content"
+        "votes content content content"
+        ". . . .";
+    }
+
+    .votes {
+        flex-direction: column;
+        margin-right: 20px;
+    }
+=======
     form.comment-form {
         display: flex;
         flex-direction: row;
@@ -95,5 +218,6 @@ input.send {
     input {
         order: 3;
     }
-    
+
+
 }
